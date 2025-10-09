@@ -1,0 +1,360 @@
+/* Main */
+:root {
+	color-scheme: light dark;
+	/* SSC & SF Colors */
+	--sscsf-spoc: #7c2629;
+	--sscsf-starcom: #418fde;
+	--sscsf-primary: #00263a;
+	--sscsf-secondary: #0e4c87;
+	--sscsf-tertiary: #febe3f;
+	/* Deep Space Blue */
+	--ui-deep-space-blue-50: #f5faff;
+	--ui-deep-space-blue-100: #cedef0;
+	--ui-deep-space-blue-150: #abc4e0;
+	--ui-deep-space-blue-200: #8aabd1;
+	--ui-deep-space-blue-250: #6d94c2;
+	--ui-deep-space-blue-300: #537eb0;
+	--ui-deep-space-blue-350: #3b6ba1;
+	--ui-deep-space-blue-400: #28588f;
+	--ui-deep-space-blue-450: #174880;
+	--ui-deep-space-blue-500: #174273;
+	--ui-deep-space-blue-550: #183e69;
+	--ui-deep-space-blue-600: #163457;
+	--ui-deep-space-blue-650: #152f4d;
+	--ui-deep-space-blue-700: #142840;
+	--ui-deep-space-blue-750: #122336;
+	--ui-deep-space-blue-800: #0f1b29;
+	--ui-deep-space-blue-850: #0c151f;
+	/* Victory Blue */
+	--ui-victory-blue-50: #f5fbff;
+	--ui-victory-blue-100: #c9e2f0;
+	--ui-victory-blue-150: #a2cbe0;
+	--ui-victory-blue-200: #7db4d1;
+	--ui-victory-blue-250: #5d9fc2;
+	--ui-victory-blue-300: #3f89b0;
+	--ui-victory-blue-350: #2777a1;
+	--ui-victory-blue-400: #11638f;
+	--ui-victory-blue-450: #005480;
+	--ui-victory-blue-500: #064d73;
+	--ui-victory-blue-550: #0a4869;
+	--ui-victory-blue-600: #0e415c;
+	--ui-victory-blue-650: #103b52;
+	--ui-victory-blue-700: #113345;
+	--ui-victory-blue-750: #112b38;
+	--ui-victory-blue-800: #0f222b;
+	--ui-victory-blue-850: #0c181f;
+	/* Space Gold */
+	--ui-space-gold-50: #fffcf5;
+	--ui-space-gold-100: #fff4de;
+	--ui-space-gold-150: #ffecc7;
+	--ui-space-gold-200: #ffe5b0;
+	--ui-space-gold-250: #ffdd99;
+	--ui-space-gold-300: #ffd582;
+	--ui-space-gold-350: #ffce6b;
+	--ui-space-gold-400: #ffc757;
+	--ui-space-gold-450: #ffbf3f;
+	--ui-space-gold-500: #e3ac3d;
+	--ui-space-gold-550: #c79738;
+	--ui-space-gold-600: #ab8333;
+	--ui-space-gold-650: #8f6e2e;
+	--ui-space-gold-700: #735a27;
+	--ui-space-gold-750: #57441f;
+	--ui-space-gold-800: #3b2f16;
+	--ui-space-gold-850: #1f180c;
+	/* Black and White */
+	--neutral-black: #000000;
+	--neutral-white: #ffffff;
+	/* Neutral */
+	--neutral-50: #fafdff;
+	--neutral-100: #ebeef0;
+	--neutral-150: #dcdfe0;
+	--neutral-200: #cdd0d1;
+	--neutral-250: #bec0c2;
+	--neutral-300: #acafb0;
+	--neutral-350: #9da0a1;
+	--neutral-400: #8c8e8f;
+	--neutral-450: #7d7f80;
+	--neutral-500: #707273;
+	--neutral-550: #666869;
+	--neutral-600: #5a5b5c;
+	--neutral-650: #505152;
+	--neutral-700: #434445;
+	--neutral-750: #373838;
+	--neutral-800: #2a2b2b;
+	--neutral-850: #1e1e1f;
+	/* Success */
+	--semantic-success-50: #f5fffa;
+	--semantic-success-100: #cef0de;
+	--semantic-success-150: #abe0c4;
+	--semantic-success-200: #8ad1ab;
+	--semantic-success-250: #6dc294;
+	--semantic-success-300: #53b07e;
+	--semantic-success-350: #3ba16b;
+	--semantic-success-400: #288f58;
+	--semantic-success-450: #178047;
+	--semantic-success-500: #177342;
+	--semantic-success-550: #18693e;
+	--semantic-success-600: #165734;
+	--semantic-success-650: #154d2f;
+	--semantic-success-700: #144028;
+	--semantic-success-750: #123623;
+	--semantic-success-800: #0f291b;
+	--semantic-success-850: #0c1f15;
+	/* Warning */
+	--semantic-warning-50: #fffbf5;
+	--semantic-warning-100: #fff2de;
+	--semantic-warning-150: #ffe9c7;
+	--semantic-warning-200: #ffdfb0;
+	--semantic-warning-250: #ffd699;
+	--semantic-warning-300: #ffcd82;
+	--semantic-warning-350: #ffc46b;
+	--semantic-warning-400: #ffbc57;
+	--semantic-warning-450: #ffb23f;
+	--semantic-warning-500: #e3a13d;
+	--semantic-warning-550: #c78e38;
+	--semantic-warning-600: #ab7b33;
+	--semantic-warning-650: #8f682e;
+	--semantic-warning-700: #735427;
+	--semantic-warning-750: #57411f;
+	--semantic-warning-800: #3b2c16;
+	--semantic-warning-850: #1f170c;
+	/* Error */
+	--semantic-error-50: #fff5f5;
+	--semantic-error-100: #f0cece;
+	--semantic-error-150: #e0abab;
+	--semantic-error-200: #d18a8a;
+	--semantic-error-250: #c26d6d;
+	--semantic-error-300: #b05353;
+	--semantic-error-350: #a13b3b;
+	--semantic-error-400: #8f2828;
+	--semantic-error-450: #801717;
+	--semantic-error-500: #731717;
+	--semantic-error-550: #691818;
+	--semantic-error-600: #571616;
+	--semantic-error-650: #4d1515;
+	--semantic-error-700: #401414;
+	--semantic-error-750: #361212;
+	--semantic-error-800: #290f0f;
+	--semantic-error-850: #1f0c0c;
+	/* SPOC */
+	--ui-spoc-50: #fcfbfb;
+	--ui-spoc-100: #f0e7e7;
+	--ui-spoc-150: #e6d5d6;
+	--ui-spoc-200: #dac2c3;
+	--ui-spoc-250: #cfafb0;
+	--ui-spoc-300: #c49d9e;
+	--ui-spoc-350: #b98c8d;
+	--ui-spoc-400: #ae797b;
+	--ui-spoc-450: #a4676a;
+	--ui-spoc-500: #995658;
+	--ui-spoc-550: #8e4346;
+	--ui-spoc-600: #833134;
+	--ui-spoc-650: #712225;
+	--ui-spoc-700: #5a1b1e;
+	--ui-spoc-750: #431416;
+	--ui-spoc-800: #2d0e0f;
+	--ui-spoc-850: #110506;
+	/* STARCOM */
+	--ui-starcom-50: #f8fcfe;
+	--ui-starcom-100: #d8eefb;
+	--ui-starcom-150: #b8dff7;
+	--ui-starcom-200: #95cff3;
+	--ui-starcom-250: #72bfef;
+	--ui-starcom-300: #4eafeb;
+	--ui-starcom-350: #289fe7;
+	--ui-starcom-400: #0a8cdd;
+	--ui-starcom-450: #097dc4;
+	--ui-starcom-500: #086dac;
+	--ui-starcom-550: #075e94;
+	--ui-starcom-600: #054f7d;
+	--ui-starcom-650: #054167;
+	--ui-starcom-700: #043351;
+	--ui-starcom-750: #03263c;
+	--ui-starcom-800: #021a29;
+	--ui-starcom-850: #01090f;
+	/* Classification */
+	--classification-unclassified: #007a33;
+	--classification-controlled: #502b85;
+	--classification-confidential: #0033a0;
+	--classification-secret: #c8102e;
+	--classification-top-secret: #ff8c00;
+	--classification-top-secret-sci: #fce83a;
+}
+
+/* Semantic */
+* {
+	/* Primary */
+	--primary-default: light-dark(var(--ui-deep-space-blue-750), var(--ui-deep-space-blue-250));
+	--primary-hover: light-dark(var(--ui-deep-space-blue-650), var(--ui-deep-space-blue-150));
+	--primary-pressed: light-dark(var(--ui-deep-space-blue-550), var(--ui-deep-space-blue-100));
+	--primary-weak: light-dark(var(--ui-deep-space-blue-150), var(--ui-deep-space-blue-600));
+	/* Secondary */
+	--secondary-default: light-dark(var(--ui-victory-blue-450), var(--ui-victory-blue-250));
+	--secondary-hover: light-dark(var(--ui-victory-blue-550), var(--ui-victory-blue-150));
+	--secondary-pressed: light-dark(var(--ui-victory-blue-650), var(--ui-victory-blue-100));
+	--secondary-weak: light-dark(var(--ui-victory-blue-150), var(--ui-deep-space-blue-600));
+	/* Tertiary */
+	--tertiary-default: light-dark(var(--ui-space-gold-450), var(--ui-space-gold-350));
+	--tertiary-hover: light-dark(var(--ui-space-gold-550), var(--ui-space-gold-250));
+	--tertiary-pressed: light-dark(var(--ui-space-gold-600), var(--ui-space-gold-150));
+	--tertiary-weak: light-dark(var(--ui-space-gold-150), var(--ui-space-gold-600));
+	/* SPOC */
+	--spoc-default: light-dark(var(--sscsfspoc), var(--ui-spoc-450));
+	--spoc-hover: light-dark(var(--ui-spoc-700), var(--ui-spoc-400));
+	--spoc-pressed: light-dark(var(--ui-spoc-750), var(--ui-spoc-350));
+	--spoc-weak: light-dark(var(--ui-spoc-150), var(--ui-spoc-650));
+	/* STARCOM */
+	--starcom-default: light-dark(var(--ui-starcom-350), var(--ui-starcom-300));
+	--starcom-hover: light-dark(var(--ui-starcom-400), var(--ui-starcom-250));
+	--starcom-pressed: light-dark(var(--ui-starcom-450), var(--ui-starcom-200));
+	--starcom-weak: light-dark(var(--ui-starcom-150), var(--ui-starcom-600));
+	/* Tonal Primary */
+	--tonal-primary-default: light-dark(var(--ui-deep-space-blue-100), var(--ui-deep-space-blue-600));
+	--tonal-primary-hover: light-dark(var(--ui-deep-space-blue-150), var(--ui-deep-space-blue-500));
+	--tonal-primary-pressed: light-dark(var(--ui-deep-space-blue-200), var(--ui-deep-space-blue-450));
+	/* Tonal Secondary */
+	--tonal-secondary-default: light-dark(var(--ui-victory-blue-100), var(--ui-victory-blue-600));
+	--tonal-secondary-hover: light-dark(var(--ui-victory-blue-150), var(--ui-victory-blue-500));
+	--tonal-secondary-pressed: light-dark(var(--ui-victory-blue-200), var(--ui-victory-blue-400));
+	/* Outline & Text */
+	--outline-text-border-and-text: light-dark(var(--ui-deep-space-blue-750), var(--ui-deep-space-blue-250));
+	--outline-text-hover: light-dark(var(--ui-deep-space-blue-150), var(--ui-deep-space-blue-700));
+	--outline-text-pressed: light-dark(var(--ui-deep-space-blue-250), var(--ui-deep-space-blue-600));
+	/* Neutral */
+	--neutral-default: light-dark(var(--neutral-500), var(--neutral-250));
+	--neutral-hover: light-dark(var(--neutral-600), var(--neutral-150));
+	--neutral-pressed: light-dark(var(--neutral-700), var(--neutral-100));
+	--neutral-weak: light-dark(var(--neutral-150), var(--neutral-600));
+	/* Neutral Subtle */
+	--neutral-subtle-default: light-dark(var(--neutral-100), var(--ui-deep-space-blue-550));
+	--neutral-subtle-hover: light-dark(var(--neutral-200), var(--ui-deep-space-blue-450));
+	--neutral-subtle-pressed: light-dark(var(--neutral-300), var(--ui-deep-space-blue-400));
+	--neutral-subtle-weak: light-dark(var(--neutral-50), var(--ui-deep-space-blue-600));
+	/* Success */
+	--success-default: light-dark(var(--semantic-success-450), var(--semantic-success-250));
+	--success-hover: light-dark(var(--semantic-success-550), var(--semantic-success-150));
+	--success-pressed: light-dark(var(--semantic-success-650), var(--semantic-success-100));
+	--success-weak: light-dark(var(--semantic-success-150), var(--semantic-success-600));
+	/* Warning */
+	--warning-default: light-dark(var(--semantic-warning-450), var(--semantic-warning-350));
+	--warning-hover: light-dark(var(--semantic-warning-550), var(--semantic-success-150));
+	--warning-pressed: light-dark(var(--semantic-warning-600), var(--semantic-success-100));
+	--warning-weak: light-dark(var(--semantic-warning-150), var(--semantic-success-600));
+	/* Error */
+	--error-default: light-dark(var(--semantic-error-450), var(--semantic-error-250));
+	--error-hover: light-dark(var(--semantic-error-550), var(--semantic-error-150));
+	--error-pressed: light-dark(var(--semantic-error-600), var(--semantic-error-100));
+	--error-weak: light-dark(var(--semantic-error-150), var(--semantic-error-600));
+}
+
+/* System */
+* {
+	/* Background */
+	--background-default: light-dark(var(--neutral-white), var(--ui-deep-space-blue-750));
+	--background-secondary: light-dark(var(--neutral-100), var(--ui-deep-space-blue-650));
+	--background-tertiary: light-dark(var(--ui-victory-blue-100), var(--neutral-750));
+	--background-inverted: light-dark(var(--ui-deep-space-blue-750), var(--neutral-100));
+	--background-neutral: light-dark(var(--neutral-100), var(--neutral-500));
+	/* Surface */
+	--surface-default: light-dark(
+		color-mix(in srgb, var(--neutral-white) 60%, transparent),
+		color-mix(in srgb, var(--ui-deep-space-blue-750) 60%, transparent)
+	);
+	--surface-secondary: light-dark(
+		color-mix(in srgb, var(--neutral-100) 60%, transparent),
+		color-mix(in srgb, var(--ui-deep-space-blue-650) 60%, transparent)
+	);
+	--surface-inverted: light-dark(
+		color-mix(in srgb, var(--ui-deep-space-blue-750) 60%, transparent),
+		color-mix(in srgb, var(--neutral-100) 60%, transparent)
+	);
+	--surface-elevation-12: light-dark(
+		color-mix(in srgb, var(--neutral-850) 12%, transparent),
+		color-mix(in srgb, var(--ui-deep-space-blue-300) 12%, transparent)
+	);
+	--surface-elevation-16: light-dark(
+		color-mix(in srgb, var(--neutral-850) 16%, transparent),
+		color-mix(in srgb, var(--ui-deep-space-blue-300) 16%, transparent)
+	);
+	--surface-hover: light-dark(
+		color-mix(in srgb, var(--ui-victory-blue-450) 12%, transparent),
+		color-mix(in srgb, var(--ui-victory-blue-250) 12%, transparent)
+	);
+	--surface-pressed: light-dark(
+		color-mix(in srgb, var(--ui-victory-blue-450) 16%, transparent),
+		color-mix(in srgb, var(--ui-victory-blue-250) 16%, transparent)
+	);
+	--surface-error-hover: light-dark(
+		color-mix(in srgb, var(--semantic-error-450) 12%, transparent),
+		color-mix(in srgb, var(--semantic-error-250) 12%, transparent)
+	);
+	--surface-error-pressed: light-dark(
+		color-mix(in srgb, var(--semantic-error-450) 16%, transparent),
+		color-mix(in srgb, var(--semantic-error-250) 16%, transparent)
+	);
+	/* Border */
+	--border-default: light-dark(var(--neutral-400), var(--neutral-500));
+	--border-weak: light-dark(var(--neutral-200), var(--neutral-600));
+	--border-success: light-dark(var(--semantic-success-450), var(--semantic-success-250));
+	--border-warning: light-dark(var(--semantic-warning-600), var(--ui-space-gold-200));
+	--border-error: light-dark(var(--semantic-error-450), var(--semantic-error-200));
+	/* Text */
+	--text-default: light-dark(var(--neutral-850), var(--neutral-50));
+	--text-weak: light-dark(var(--neutral-700), var(--neutral-100));
+	--text-secondary: light-dark(var(--sscsf-secondary), var(--ui-victory-blue-200));
+	--text-inverted-white: light-dark(var(--neutral-white), var(--neutral-850));
+	--text-inverted-neutral: light-dark(var(--neutral-100), var(--neutral-750));
+	--text-inverted-blue: light-dark(var(--ui-victory-blue-200), var(--ui-deep-space-blue-700));
+	--text-inverted-gold: light-dark(var(--ui-space-gold-450), var(--ui-deep-space-blue-700));
+	--text-success: light-dark(var(--semantic-success-550), var(--semantic-success-250));
+	--text-warning: light-dark(var(--ui-space-gold-700), var(--semantic-warning-200));
+	--text-error: light-dark(var(--semantic-error-550), var(--semantic-error-150));
+	--text-dark-text: light-dark(var(--neutral-850), var(--neutral-850));
+	/* Icons */
+	--icons-default: light-dark(var(--neutral-850), var(--neutral-50));
+	--icons-weak: light-dark(var(--neutral-700), var(--neutral-200));
+	--icons-inverted-white: light-dark(var(--neutral-white), var(--neutral-850));
+	--icons-inverted-neutral: light-dark(var(--neutral-100), var(--neutral-750));
+	--icons-inverted-blue: light-dark(var(--ui-victory-blue-200), var(--ui-deep-space-blue-700));
+	--icons-success: light-dark(var(--semantic-success-550), var(--semantic-success-250));
+	--icons-warning: light-dark(var(--semantic-warning-600), var(--semantic-warning-200));
+	--icons-error: light-dark(var(--semantic-error-450) var(--semantic-error-150));
+	/* Navigation */
+	--navigation-background: var(--ui-deep-space-blue-800);
+	--navigation-icon: var(--ui-deep-space-blue-200);
+	--navigation-text: var(--neutral-white);
+	--navigation-hover: var(--ui-victory-blue-550);
+	--navigation-pressed: var(--ui-victory-blue-650);
+	--navigation-active: var(--ui-victory-blue-550);
+	--navigation-active-hover: var(--ui-victory-blue-650);
+	--navigation-active-pressed: var(--ui-victory-blue-700);
+	--navigation-hamburger-closing-default: var(--ui-victory-blue-550);
+	--navigation-hamburger-closing-hover: var(--ui-victory-blue-600);
+	--navigation-hamburger-closing-pressed: var(--ui-victory-blue-650);
+	--navigation-action-button-primary-text-and-icon: var(--ui-deep-space-blue-750);
+	--navigation-action-button-primary-default: var(--ui-space-gold-450);
+	--navigation-action-button-primary-hover: var(--ui-space-gold-350);
+	--navigation-action-button-primary-pressed: var(--ui-space-gold-250);
+	--navigation-action-button-primary-active: var(--ui-space-gold-350);
+	--navigation-action-button-subtle-text-and-icon: var(--ui-deep-space-blue-750);
+	--navigation-action-button-subtle-default: var(--ui-victory-blue-100);
+	--navigation-action-button-subtle-hover: var(--ui-victory-blue-150);
+	--navigation-action-button-subtle-pressed: var(--ui-victory-blue-200);
+	--navigation-action-button-subtle-active: var(--ui-victory-blue-150);
+	--navigation-primary-drawer: var(--ui-victory-blue-650);
+	--navigation-neutral-drawer: light-dark(var(--neutral-white), var(--neutral-650));
+	--navigation-focus: var(--ui-victory-blue-300);
+	/* Focus */
+	--focus-default: light-dark(var(--sscsf-secondary), var(--ui-victory-blue-300));
+	/* Disabled */
+	--disabled-default: light-dark(var(--neutral-300), var(--neutral-550));
+}
+
+html,
+.light {
+	color-scheme: light;
+}
+
+.dark {
+	color-scheme: dark;
+}

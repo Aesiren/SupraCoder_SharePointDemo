@@ -1,0 +1,21 @@
+:root {
+	/* Jarrett's Custom Animation */
+	--JCA: cubic-bezier(0.22, 0.86, 0.54, 1);
+	--transition-slow: 1s;
+	--transition-medium: 0.3s;
+	--transition-fast: 0.1s;
+}
+
+*,
+*::before,
+*::after {
+	/* 
+	For any other element that needs a transition,
+	just add/adjust its transition-property.
+    Children inherit parent transition properties. 
+	*/
+	transition-timing-function: var(--JCA);
+	transition-property: none;
+	transition-duration: var(--transition-medium, 0.3s);
+	transition-property: inherit;
+}

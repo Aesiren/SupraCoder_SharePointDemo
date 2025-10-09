@@ -1,0 +1,25 @@
+@import './colors.css';
+@import './elevation.css';
+@import './sizing.css';
+@import './typography.css';
+@import './transitions.css';
+@import './utility.css';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+	display: flex;
+	height: 100%;
+}

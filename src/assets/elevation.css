@@ -1,0 +1,12 @@
+.elevation-100 {
+	box-shadow: 0px 2px 8px 0px var(--surface-elevation-12);
+}
+.elevation-200 {
+	box-shadow: 0px 4px 12px 0px var(--surface-elevation-16);
+}
+.elevation-300 {
+	box-shadow: 0px 8px 16px 0px var(--surface-elevation-12);
+}
+.elevation-400 {
+	box-shadow: 0px 8px 32px 0px var(--surface-elevation-16);
+}
