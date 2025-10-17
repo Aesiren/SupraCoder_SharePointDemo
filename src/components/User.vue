@@ -24,7 +24,7 @@ function getGreeting() {
       <span class="time-icon material-rounded" :class="{
         outlined: isMoon,
       }" :style="{
-        color: timeIconColor,
+        color: timeIcon,
       }">
         {{ timeIcon }}</span>
       <span class="welcome-date">{{ formattedDate }}, </span>
@@ -38,7 +38,7 @@ function getGreeting() {
     <div class="user-info">
       <div class="user">
         <div class="user-pic">
-          <img v-if="userStore.profilePict != ''" :src="userStore.profilePic" />
+          <img v-if="userStore.profilePic != ''" :src="userStore.profilePic" />
           <p v-else>{{ userStore.userInitials }}</p>
           <img class="emblem"
             src="http://sscorder66.sharepoint.com/sites/dev/sscportal/assets/SpaceLaunchEmblem-ZTru3v4r.svg"

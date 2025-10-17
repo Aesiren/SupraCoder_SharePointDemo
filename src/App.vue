@@ -6,9 +6,11 @@ import ProfileDropdown from '@/components/ProfileDropdown.vue';
 import { RouterView, useRouter } from 'vue-router';
 import { ref, onMounted, computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
+import { useSPListStore } from './stores/spListStore';
 import { useGeneralStore } from '@/stores/generalStore';
 
 const userStore = useUserStore();
+const listStore = useSPListStore();
 const generalStore = useGeneralStore();
 const router = useRouter();
 
@@ -18,6 +20,11 @@ const showProfileDropdown = ref(false);
 
 onMounted(() => {
 	if (!userStore.loaded) userStore.initialize().finally(() => (loading.value = false));
+	window.addEventListener('resize', () => {
+		windowWidth.value = window.innerWidth;
+	});
+
+	if (!listStore.loaded) listStore.initialize().finally(() => (loading.value = false));
 	window.addEventListener('resize', () => {
 		windowWidth.value = window.innerWidth;
 	});
