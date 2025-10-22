@@ -7,7 +7,7 @@ export const useSPListStore = defineStore('lists', () => {
 	const errorStore = useErrorStore();
 	const loading = ref<boolean>(true);
 	const loaded = ref<boolean>(false);
-	const spListData = ref<SPListData>(<SPListData>{});
+	const spListData = ref<SPListData[]>([]);
 
 	async function getList(): Promise<void> {
 		console.log('Getting list...');
@@ -32,8 +32,17 @@ export const useSPListStore = defineStore('lists', () => {
 		loaded.value = true;
 	}
 
+	async function refresh() {
+		try {
+			spListData.value = await SPListAPI.getSPListData();
+		} catch (err) {
+			errorStore.logError(err, 'Error refreshing data', 'spListStore.ts');
+		}
+	}
+
 	return {
 		initialize,
+		refresh,
 		loading,
 		loaded,
 		spListData,
